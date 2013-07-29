@@ -4,47 +4,44 @@
     <meta charset="utf-8" />
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d286qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
-	/*Large destop*/
-	@media (min-width: 980px){
-		body{ padding-top: 60px; }
-	}
-      body{
-      padding-top: 20px;
-      padding-bottom:40px;
-}
-.container{
-   width: 960px;
-}
-p.lead{
-    padding-top:15px;
-}
-.navigation,.pitch,.section1,.section2,.faq,.footer{
-    padding: 10px 0px 10px 0px;
-}
-B
-.video,.thermometer,.order,.social{
-    border: 1px dotted;
-    text-align: center;
-}
-.video{
-    /*Internal border have 1px, thus need 4 x 1px x 120px */
-    height: 40px;
-    line-height:40px;
-}
-.thermometer,.order,.social{
-    height:40px;
-    line-height:40px;
-}
-div.row{
-    border:1px solid;
-}
+      /** Large desktop */
+      @media (min-width: 980px){
+      body{ padding-top: 60px; }
+      	.linediv-l{ border-right: 1px white solid; }
+      	.linediv-r{ border-left: 1px white solid; }
+      }
+      
+      /* Landscape phones and down */
+      @media (max-width: 480px){
+      .copy{ padding: 2.5% 10%; }
+      	.linediv-l{ border-bottom: 1px white solid; }
+      	.linediv-r{ border-top: 1px white solid; }
+      }
+
+      /* All form factors */
+      
+      /* Main body and headings */
+      body{ font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+      .heading, .subheading{
+      	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      	text-align: center;
+      }
+      p.lead{
+      	padding-top: 1.5%;
+      	font-size: 24px;
+      	line-height: 30px;
+      }
+      p{
+      	font-size: 18px;
+      	line-height: 24px;
+      }	
     </style>
   </head>
   <body>
-    <!--Mobile friendly navbar adapted from example-->
-    <!--http://twitter.github.io/bootstrap/examples/starter-template.html-->
+    <!--Mobile friendly navbar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 	<div class="container">
@@ -65,26 +62,15 @@ div.row{
 	</div>
     </div>
 
-
-
+    <!--We use row-fluid inside containers to achieve a resizable layout -->
     <div class="container">
-      <div class="row navigation">
-	<div class="span2 logo">
-	  Logo
-	</div>
-	<div class="span6 blank">
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
-	</div>
-      </div>
-      <div class="row heading">
+      <!-- Font and paired font of .heading/ .subheading & body from Google Fonts -->
+      <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Bitstarter Title</h1>
+	  <h1>Product</h1>
 	</div>
       </div>
-      <div class="row subheading">
+      <div class="row-fuild subheading">
 	<div class="span12">
 	  <p class="lead">This is my first bitstarter project</p>
 	</div>
